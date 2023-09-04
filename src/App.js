@@ -35,6 +35,9 @@ function App() {
     <>
       <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
         <h1 className="text-white text-center my-3">Password Generator</h1>
+
+            {/* Password Input checkbox */}
+            
         <div className="flex shadow rounded-lg overflow-hidden mb-4">
           <input
             type="text"
@@ -52,6 +55,9 @@ function App() {
           </button>
         </div>
         <div className="flex text-sm gap-x-2">
+
+                {/* Number Range checkbox */}
+
           <div className="flex items-center gap-x-1">
             <input
               type="range"
@@ -62,9 +68,12 @@ function App() {
               onChange={(e) => {
                 setLength(e.target.value);
               }}
-            />
+            />           
             <label>Length:{length}</label>
           </div>
+
+                {/* Number checkbox */}
+
           <div className="flex items-center gap-x-1">
             <input
               type="checkbox"
@@ -76,6 +85,9 @@ function App() {
             />
             <label htmlFor="numberInput">Number</label>
           </div>
+
+                {/* Characters checkbox */}
+
           <div className="flex items-center gap-x-1">
             <input
               type="checkbox"
@@ -87,6 +99,7 @@ function App() {
             />
             <label htmlFor="charInput">Characters</label>
           </div>
+
         </div>
       </div>
     </>
